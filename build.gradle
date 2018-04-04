@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.10'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: '26.0.2',
+            minSdkVersion: 21,
+            targetSdkVersion: 26,
+            androidSupport: '26.1.0',
+    ]
+
+    dependencies = [
+            // Android
+            supportAppcompat: "com.android.support:appcompat-v7:${android.androidSupport}",
+            supportDesign: "com.android.support:design:${android.androidSupport}",
+            supportCardView: "com.android.support:cardview-v7:${android.androidSupport}",
+            constraintLayout: 'com.android.support.constraint:constraint-layout:1.0.2',
+
+            // gson
+            gson: 'com.google.code.gson:gson:2.8.1',
+
+            // Square
+            okhttp: 'com.squareup.okhttp3:okhttp:3.8.0',
+
+            // glide
+            glide: 'com.github.bumptech.glide:glide:3.8.0',
+
+            // PhotoView
+            photoView: 'com.github.chrisbanes:PhotoView:2.1.3'
+    ]
+}
+
+
