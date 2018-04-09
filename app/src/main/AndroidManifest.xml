@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.xinzy.zhihu.daily.biz.main.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".detail.DetailActivity"
+            android:name="com.xinzy.zhihu.daily.biz.detail.DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".image.ImageActivity"
+            android:name="com.xinzy.zhihu.daily.biz.image.ImageActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
