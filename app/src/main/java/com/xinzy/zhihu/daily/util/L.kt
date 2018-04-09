@@ -1,4 +1,4 @@
-package com.xinzy.essence.kotlin.util
+package com.xinzy.zhihu.daily.util
 
 import android.util.Log
 

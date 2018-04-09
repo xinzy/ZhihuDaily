@@ -13,7 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
-import com.xinzy.essence.kotlin.util.L
+import com.xinzy.zhihu.daily.util.L
 import com.xinzy.zhihu.daily.base.dp2px
 
 /**

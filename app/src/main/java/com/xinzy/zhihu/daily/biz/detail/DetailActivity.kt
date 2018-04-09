@@ -8,7 +8,7 @@ import android.support.annotation.Keep
 import android.view.MenuItem
 import android.webkit.*
 import com.bumptech.glide.Glide
-import com.xinzy.essence.kotlin.util.L
+import com.xinzy.zhihu.daily.util.L
 import com.xinzy.zhihu.daily.R
 import com.xinzy.zhihu.daily.base.BaseActivity
 import com.xinzy.zhihu.daily.biz.detail.constact.DetailConstact
